@@ -1,0 +1,23 @@
+{
+  "name": "hypernova-webpack",
+  "version": "0.0.0",
+  "description": "Hypernova server specializing in consuming Webpack assets",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mavenlink/hypernova-webpack.git"
+  },
+  "keywords": [
+    "Hypernova",
+    "Webpack"
+  ],
+  "author": "Juan Carlos Medina",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mavenlink/hypernova-webpack/issues"
+  },
+  "homepage": "https://github.com/mavenlink/hypernova-webpack#readme"
+}
