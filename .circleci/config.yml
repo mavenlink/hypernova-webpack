@@ -1,12 +1,15 @@
 version: 2
 
+orbs:
+  git: mavenlink/git@1.0.0
+
 jobs:
   build:
     docker:
       - image: circleci/node:8.11
     working_directory: ~/repo
     steps:
-      - checkout
+      - git/checkout
       - restore_cache:
           keys:
           - v1-dependencies-{{ checksum "package.json" }}
