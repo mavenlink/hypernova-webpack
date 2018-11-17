@@ -20,6 +20,8 @@
     "url": "https://github.com/mavenlink/hypernova-webpack/issues"
   },
   "homepage": "https://github.com/mavenlink/hypernova-webpack#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "jest": "^23.6.0"
+  },
   "dependencies": {}
 }
