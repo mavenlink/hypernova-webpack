@@ -27,7 +27,7 @@ hypernova({
 
   getComponent(name) {
     const stats = require(options['manifest-path']);
-    if (!production) delete require.cache[require.resolve(statsPath)];
+    if (!production) delete require.cache[require.resolve(options['manifest-path'])];
 
     const entryPath = path.join(
       options['assets-path'],
