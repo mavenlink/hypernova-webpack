@@ -8,6 +8,7 @@ const defaultOptions = {
   'assets-path': __dirname,
   'logs-path': path.join(__dirname, 'hypernova.log'),
   'manifest-path': __dirname,
+  port: 13337,
 };
 
 const options = process.argv
@@ -44,5 +45,5 @@ hypernova({
     ],
   }),
 
-  port: 13337,
+  port: options.port,
 });
