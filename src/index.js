@@ -26,7 +26,7 @@ hypernova({
   devMode: !production,
 
   getComponent(name) {
-    const stats = require(options['manifest-path']); // eslint-disable-line global-require, import/no-dynamic-require
+    const stats = require(options['manifest-path']);
     if (!production) delete require.cache[require.resolve(statsPath)];
 
     const entryPath = path.join(
@@ -34,7 +34,7 @@ hypernova({
       stats.assetsByChunkName[name].find(file => file.includes('.js')),
     );
 
-    return require(entryPath).default; // eslint-disable-line global-require, import/no-dynamic-require
+    return require(entryPath).default;
   },
 
   loggerInstance: winston.createLogger({
