@@ -45,5 +45,5 @@ hypernova({
     ],
   }),
 
-  port: options.port,
+  port: parseInt(options.port, 10),
 });
