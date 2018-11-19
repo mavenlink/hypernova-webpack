@@ -6,8 +6,8 @@ const production = process.env.NODE_ENV === 'production';
 
 const defaultOptions = {
   'assets-path': process.cwd(),
-  'logs-path': path.join(process.cwd(), 'hypernova.log'),
-  'manifest-path': path.join(process.cwd(), 'manifest.json'),
+  'logs-path': path.join(process.cwd(), 'dist', 'hypernova.log'),
+  'manifest-path': path.join(process.cwd(), 'dist', 'manifest.json'),
   port: 13337,
 };
 
