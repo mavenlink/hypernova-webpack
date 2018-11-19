@@ -5,7 +5,7 @@ const winston = require('winston');
 const production = process.env.NODE_ENV === 'production';
 
 const defaultOptions = {
-  'assets-path': process.cwd(),
+  'assets-path': path.join(process.cwd(), 'dist'),
   'logs-path': path.join(process.cwd(), 'dist', 'hypernova.log'),
   'manifest-path': path.join(process.cwd(), 'dist', 'manifest.json'),
   port: 13337,
